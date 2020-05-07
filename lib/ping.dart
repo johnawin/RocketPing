@@ -11,6 +11,7 @@ Future<void> pingResponseTime() async {
   );
   if (response.statusCode == 200) {
     stopwatch.stop();
+    //return stopwatch.elapsedMicroseconds.toString();
   } else {
     throw Exception('Failed to get a network response.');
   }
